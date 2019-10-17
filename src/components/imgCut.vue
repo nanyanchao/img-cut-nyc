@@ -137,7 +137,7 @@ export default {
       ctx.clearRect(0,0,radius*2,radius*2)
       ctx.putImageData(imgData,0,0)
       this.reviewData = this.$refs['myCutImg'].toDataURL("image/png")
-      this.cutDown(this.reviewData)
+      this.$emit('cutDown',this.reviewData)
     },
   },
   mounted(){
