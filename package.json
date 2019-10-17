@@ -1,6 +1,6 @@
 {
   "name": "img-cut-vue-nyc",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "js number calc float",
   "main": "src/index.js",
   "scripts": {
@@ -34,6 +34,10 @@
     "parserOptions": {
       "parser": "babel-eslint"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nanyanchao/img-cut-vue-nyc.git"
   },
   "postcss": {
     "plugins": {

@@ -119,7 +119,7 @@ export default {
     dwImg(){
       this.ctx.clearRect(0, 0, this.width, this.height);
       let img = new Image()
-      img.src=imgData
+      img.src=this.imgData
       this.ctx.drawImage(img, 0, 0, this.width, this.height)
     },
     dwArc(){
