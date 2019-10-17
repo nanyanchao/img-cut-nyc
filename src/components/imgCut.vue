@@ -35,8 +35,8 @@ export default {
       type:Function
     },
     imgData:{
-      default:()=>{},
-      type:Object
+      default:'',
+      type:String
     }
   },
   data(){
