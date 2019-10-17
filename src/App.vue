@@ -1,5 +1,5 @@
 <template>
-    <ImgCut v-bind="$attrs">
+    <ImgCut v-bind="$attrs" v-on="$listeners">
       <slot />
     </ImgCut>
 </template>
