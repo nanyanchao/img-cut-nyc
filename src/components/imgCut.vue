@@ -120,7 +120,9 @@ export default {
       this.ctx.clearRect(0, 0, this.width, this.height);
       let img = new Image()
       img.src=this.imgData
-      this.ctx.drawImage(img, 0, 0, this.width, this.height)
+      img.onload = ()=>{
+        this.ctx.drawImage(img, 0, 0, this.width, this.height)
+      }
     },
     dwArc(){
       this.ctx.beginPath()   
