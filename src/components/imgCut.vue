@@ -118,10 +118,16 @@ export default {
     },
     dwImg(){
       this.ctx.clearRect(0, 0, this.width, this.height);
-      let img = new Image()
-      img.src=this.imgData
-      img.onload = ()=>{
-        this.ctx.drawImage(img, 0, 0, this.width, this.height)
+      if(this.imgObj){
+        this.ctx.drawImage(this.imgObj, 0, 0, this.width, this.height)
+      }else{
+        let img = new Image()
+        img.src=this.imgData
+        img.onload = ()=>{
+          this.imgObj = img
+          this.ctx.drawImage(img, 0, 0, this.width, this.height)
+          this.dwArc()
+        }
       }
     },
     dwArc(){
